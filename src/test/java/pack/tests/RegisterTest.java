@@ -23,4 +23,12 @@ public class RegisterTest extends BaseClass {
         String expected = "Address";
         Assert.assertEquals(actual, expected, "Label text mismatch for Address");
    }
+	
+	@Test
+	public void test_3() {
+        WebElement sex = driver.findElement(By.xpath("//input[@value='Male']"));
+        sex.click();
+   }
+	
+	
 }
